@@ -12,6 +12,8 @@ struct BinaryTreeNode* initWithSize(size_t size){
     return newNode;
 }
 
+char* boolToString(bool boolean);
+
 void addValueNode(struct BinaryTreeNode *treeRoot,void* value){
 
 }
@@ -21,10 +23,11 @@ void printValueOfNode(struct BinaryTreeNode *node, int* level){
     int* intValue;
     intValue = node->value;
     int currentLevel = level ? *level : -1;
-    printf("value of treeNode %d, at level %d\n",*intValue, currentLevel);
+    char *isLeaf = boolToString(nodeIsLeaf(node));
+    printf("value of treeNode %d, at level %d isLeaf: %s\n",*intValue, currentLevel, isLeaf);
 }
 
-void inOrderPrint(struct BinaryTreeNode *treeRoot, int* currentLevel){
+void traverseInOrder(struct BinaryTreeNode *treeRoot, int* currentLevel){
 
     int safetyInt = 0;
     int* intptr = malloc(sizeof(int));
@@ -36,14 +39,26 @@ void inOrderPrint(struct BinaryTreeNode *treeRoot, int* currentLevel){
     }
 
     if (treeRoot->left){
-        inOrderPrint(treeRoot->left,intptr);
+        traverseInOrder(treeRoot->left, intptr);
     }
 
     printValueOfNode(treeRoot,intptr);
 
     if (treeRoot->right){
-        inOrderPrint(treeRoot->right,intptr);
+        traverseInOrder(treeRoot->right, intptr);
     }
+}
+
+bool nodeIsLeaf(struct BinaryTreeNode *node){
+    bool isLeaf = false;
+    if (!node->left && !node->right){
+        isLeaf = true;
+    }
+    return isLeaf;
+}
+
+char* boolToString(bool boolean){
+    return boolean ? "true" : "false";
 }
 
 void treeDemo(){
@@ -72,6 +87,6 @@ void treeDemo(){
     *loaderInt = 55;
     rightleft->left = rightleftleft;
 
-    inOrderPrint(node,NULL);
+    traverseInOrder(node, NULL);
 
 }

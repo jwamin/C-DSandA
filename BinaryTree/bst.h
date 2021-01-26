@@ -7,6 +7,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 typedef struct BinaryTreeNode{
     void* value;
@@ -19,6 +20,8 @@ struct BinaryTreeNode* initWithSize(size_t size);
 int comparison(struct BinaryTreeNode* compareNode,struct BinaryTreeNode* currentNode);
 
 void addValueNode(struct BinaryTreeNode *treeRoot,void* value);
+
+bool nodeIsLeaf(struct BinaryTreeNode *node);
 
 void treeDemo();
 
