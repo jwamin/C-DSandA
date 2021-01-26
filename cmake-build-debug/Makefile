@@ -143,6 +143,60 @@ DSandA/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DSandA.dir/build.make CMakeFiles/DSandA.dir/build
 .PHONY : DSandA/fast
 
+BinaryTree/bst.o: BinaryTree/bst.c.o
+
+.PHONY : BinaryTree/bst.o
+
+# target to build an object file
+BinaryTree/bst.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DSandA.dir/build.make CMakeFiles/DSandA.dir/BinaryTree/bst.c.o
+.PHONY : BinaryTree/bst.c.o
+
+BinaryTree/bst.i: BinaryTree/bst.c.i
+
+.PHONY : BinaryTree/bst.i
+
+# target to preprocess a source file
+BinaryTree/bst.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DSandA.dir/build.make CMakeFiles/DSandA.dir/BinaryTree/bst.c.i
+.PHONY : BinaryTree/bst.c.i
+
+BinaryTree/bst.s: BinaryTree/bst.c.s
+
+.PHONY : BinaryTree/bst.s
+
+# target to generate assembly for a file
+BinaryTree/bst.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DSandA.dir/build.make CMakeFiles/DSandA.dir/BinaryTree/bst.c.s
+.PHONY : BinaryTree/bst.c.s
+
+LinkedLists/sll.o: LinkedLists/sll.c.o
+
+.PHONY : LinkedLists/sll.o
+
+# target to build an object file
+LinkedLists/sll.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DSandA.dir/build.make CMakeFiles/DSandA.dir/LinkedLists/sll.c.o
+.PHONY : LinkedLists/sll.c.o
+
+LinkedLists/sll.i: LinkedLists/sll.c.i
+
+.PHONY : LinkedLists/sll.i
+
+# target to preprocess a source file
+LinkedLists/sll.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DSandA.dir/build.make CMakeFiles/DSandA.dir/LinkedLists/sll.c.i
+.PHONY : LinkedLists/sll.c.i
+
+LinkedLists/sll.s: LinkedLists/sll.c.s
+
+.PHONY : LinkedLists/sll.s
+
+# target to generate assembly for a file
+LinkedLists/sll.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DSandA.dir/build.make CMakeFiles/DSandA.dir/LinkedLists/sll.c.s
+.PHONY : LinkedLists/sll.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -170,33 +224,6 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DSandA.dir/build.make CMakeFiles/DSandA.dir/main.c.s
 .PHONY : main.c.s
 
-sll.o: sll.c.o
-
-.PHONY : sll.o
-
-# target to build an object file
-sll.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DSandA.dir/build.make CMakeFiles/DSandA.dir/sll.c.o
-.PHONY : sll.c.o
-
-sll.i: sll.c.i
-
-.PHONY : sll.i
-
-# target to preprocess a source file
-sll.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DSandA.dir/build.make CMakeFiles/DSandA.dir/sll.c.i
-.PHONY : sll.c.i
-
-sll.s: sll.c.s
-
-.PHONY : sll.s
-
-# target to generate assembly for a file
-sll.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DSandA.dir/build.make CMakeFiles/DSandA.dir/sll.c.s
-.PHONY : sll.c.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -206,12 +233,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... DSandA"
+	@echo "... BinaryTree/bst.o"
+	@echo "... BinaryTree/bst.i"
+	@echo "... BinaryTree/bst.s"
+	@echo "... LinkedLists/sll.o"
+	@echo "... LinkedLists/sll.i"
+	@echo "... LinkedLists/sll.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... sll.o"
-	@echo "... sll.i"
-	@echo "... sll.s"
 .PHONY : help
 
 

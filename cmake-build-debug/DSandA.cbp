@@ -78,13 +78,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/jwamin/CLionProjects/DSandA/BinaryTree/bst.c">
+			<Option target="DSandA"/>
+		</Unit>
+		<Unit filename="/Users/jwamin/CLionProjects/DSandA/BinaryTree/bst.h">
+			<Option target="DSandA"/>
+		</Unit>
+		<Unit filename="/Users/jwamin/CLionProjects/DSandA/LinkedLists/sll.c">
+			<Option target="DSandA"/>
+		</Unit>
+		<Unit filename="/Users/jwamin/CLionProjects/DSandA/LinkedLists/sll.h">
+			<Option target="DSandA"/>
+		</Unit>
 		<Unit filename="/Users/jwamin/CLionProjects/DSandA/main.c">
-			<Option target="DSandA"/>
-		</Unit>
-		<Unit filename="/Users/jwamin/CLionProjects/DSandA/sll.c">
-			<Option target="DSandA"/>
-		</Unit>
-		<Unit filename="/Users/jwamin/CLionProjects/DSandA/sll.h">
 			<Option target="DSandA"/>
 		</Unit>
 		<Unit filename="/Users/jwamin/CLionProjects/DSandA/CMakeLists.txt">

@@ -90,32 +90,47 @@ CMakeFiles/DSandA.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/DSandA.dir/main.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwamin/CLionProjects/DSandA/main.c -o CMakeFiles/DSandA.dir/main.c.s
 
-CMakeFiles/DSandA.dir/sll.c.o: CMakeFiles/DSandA.dir/flags.make
-CMakeFiles/DSandA.dir/sll.c.o: ../sll.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwamin/CLionProjects/DSandA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/DSandA.dir/sll.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/DSandA.dir/sll.c.o   -c /Users/jwamin/CLionProjects/DSandA/sll.c
+CMakeFiles/DSandA.dir/LinkedLists/sll.c.o: CMakeFiles/DSandA.dir/flags.make
+CMakeFiles/DSandA.dir/LinkedLists/sll.c.o: ../LinkedLists/sll.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwamin/CLionProjects/DSandA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/DSandA.dir/LinkedLists/sll.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/DSandA.dir/LinkedLists/sll.c.o   -c /Users/jwamin/CLionProjects/DSandA/LinkedLists/sll.c
 
-CMakeFiles/DSandA.dir/sll.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/DSandA.dir/sll.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwamin/CLionProjects/DSandA/sll.c > CMakeFiles/DSandA.dir/sll.c.i
+CMakeFiles/DSandA.dir/LinkedLists/sll.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/DSandA.dir/LinkedLists/sll.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwamin/CLionProjects/DSandA/LinkedLists/sll.c > CMakeFiles/DSandA.dir/LinkedLists/sll.c.i
 
-CMakeFiles/DSandA.dir/sll.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/DSandA.dir/sll.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwamin/CLionProjects/DSandA/sll.c -o CMakeFiles/DSandA.dir/sll.c.s
+CMakeFiles/DSandA.dir/LinkedLists/sll.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/DSandA.dir/LinkedLists/sll.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwamin/CLionProjects/DSandA/LinkedLists/sll.c -o CMakeFiles/DSandA.dir/LinkedLists/sll.c.s
+
+CMakeFiles/DSandA.dir/BinaryTree/bst.c.o: CMakeFiles/DSandA.dir/flags.make
+CMakeFiles/DSandA.dir/BinaryTree/bst.c.o: ../BinaryTree/bst.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/jwamin/CLionProjects/DSandA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/DSandA.dir/BinaryTree/bst.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/DSandA.dir/BinaryTree/bst.c.o   -c /Users/jwamin/CLionProjects/DSandA/BinaryTree/bst.c
+
+CMakeFiles/DSandA.dir/BinaryTree/bst.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/DSandA.dir/BinaryTree/bst.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jwamin/CLionProjects/DSandA/BinaryTree/bst.c > CMakeFiles/DSandA.dir/BinaryTree/bst.c.i
+
+CMakeFiles/DSandA.dir/BinaryTree/bst.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/DSandA.dir/BinaryTree/bst.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jwamin/CLionProjects/DSandA/BinaryTree/bst.c -o CMakeFiles/DSandA.dir/BinaryTree/bst.c.s
 
 # Object files for target DSandA
 DSandA_OBJECTS = \
 "CMakeFiles/DSandA.dir/main.c.o" \
-"CMakeFiles/DSandA.dir/sll.c.o"
+"CMakeFiles/DSandA.dir/LinkedLists/sll.c.o" \
+"CMakeFiles/DSandA.dir/BinaryTree/bst.c.o"
 
 # External object files for target DSandA
 DSandA_EXTERNAL_OBJECTS =
 
 DSandA: CMakeFiles/DSandA.dir/main.c.o
-DSandA: CMakeFiles/DSandA.dir/sll.c.o
+DSandA: CMakeFiles/DSandA.dir/LinkedLists/sll.c.o
+DSandA: CMakeFiles/DSandA.dir/BinaryTree/bst.c.o
 DSandA: CMakeFiles/DSandA.dir/build.make
 DSandA: CMakeFiles/DSandA.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/jwamin/CLionProjects/DSandA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable DSandA"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/jwamin/CLionProjects/DSandA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable DSandA"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DSandA.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

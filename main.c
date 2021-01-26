@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include "sll.h"
+#include "LinkedLists/sll.h"
+#include "BinaryTree/bst.h"
 
 int main() {
 
@@ -11,7 +12,9 @@ int main() {
     printf("value from heap is: %d\n",*valueFromHeap);
     free(newnode);
 
-    demo2();
+    //demo2();
+    printf("\ntrees:\n");
+    treeDemo();
 
     return 0;
 }

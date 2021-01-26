@@ -94,12 +94,12 @@ clean: CMakeFiles/DSandA.dir/clean
 CMakeFiles/DSandA.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DSandA.dir/build.make CMakeFiles/DSandA.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DSandA.dir/build.make CMakeFiles/DSandA.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jwamin/CLionProjects/DSandA/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target DSandA"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/jwamin/CLionProjects/DSandA/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target DSandA"
 .PHONY : CMakeFiles/DSandA.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/DSandA.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jwamin/CLionProjects/DSandA/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jwamin/CLionProjects/DSandA/cmake-build-debug/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/DSandA.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jwamin/CLionProjects/DSandA/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/DSandA.dir/rule

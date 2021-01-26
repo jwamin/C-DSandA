@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/DSandA.dir/BinaryTree/bst.c.o"
+  "CMakeFiles/DSandA.dir/LinkedLists/sll.c.o"
   "CMakeFiles/DSandA.dir/main.c.o"
-  "CMakeFiles/DSandA.dir/sll.c.o"
   "DSandA"
   "DSandA.pdb"
 )

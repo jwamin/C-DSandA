@@ -4,8 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/Users/jwamin/CLionProjects/DSandA/BinaryTree/bst.c" "/Users/jwamin/CLionProjects/DSandA/cmake-build-debug/CMakeFiles/DSandA.dir/BinaryTree/bst.c.o"
+  "/Users/jwamin/CLionProjects/DSandA/LinkedLists/sll.c" "/Users/jwamin/CLionProjects/DSandA/cmake-build-debug/CMakeFiles/DSandA.dir/LinkedLists/sll.c.o"
   "/Users/jwamin/CLionProjects/DSandA/main.c" "/Users/jwamin/CLionProjects/DSandA/cmake-build-debug/CMakeFiles/DSandA.dir/main.c.o"
-  "/Users/jwamin/CLionProjects/DSandA/sll.c" "/Users/jwamin/CLionProjects/DSandA/cmake-build-debug/CMakeFiles/DSandA.dir/sll.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

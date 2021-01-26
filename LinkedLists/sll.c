@@ -100,7 +100,7 @@ void demo2(){
         current = current->next;
     }
 
-    freeLinkedList(start);
+    freeSinglyLinkedList(start);
 
     printf("...done\n");
 
