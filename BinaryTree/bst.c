@@ -14,20 +14,18 @@ struct BinaryTreeNode* initWithSize(size_t size){
 
 char* boolToString(bool boolean);
 
-void addValueNode(struct BinaryTreeNode *treeRoot,void* value){
+void printValueOfNode(struct BinaryTreeNode *node, const int* level){
 
-}
-
-void printValueOfNode(struct BinaryTreeNode *node, int* level){
     //assuming int for now
     int* intValue;
-    intValue = node->value;
     int currentLevel = level ? *level : -1;
     char *isLeaf = boolToString(nodeIsLeaf(node));
+
+    intValue = node->value;
     printf("value of treeNode %d, at level %d isLeaf: %s\n",*intValue, currentLevel, isLeaf);
 }
 
-void traverseInOrder(struct BinaryTreeNode *treeRoot, int* currentLevel){
+void traverseInOrder(struct BinaryTreeNode *treeRoot, const int* currentLevel){
 
     int safetyInt = 0;
     int* intptr = malloc(sizeof(int));
@@ -88,5 +86,13 @@ void treeDemo(){
     rightleft->left = rightleftleft;
 
     traverseInOrder(node, NULL);
+}
 
+//not current implemented
+void addValueForNode(struct BinaryTreeNode *treeRoot, void* value){
+
+}
+
+int compareTreeNodes(struct BinaryTreeNode* compareNode, struct BinaryTreeNode* currentNode) {
+    // compare... pointers?
 }

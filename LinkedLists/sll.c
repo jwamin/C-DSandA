@@ -64,8 +64,9 @@ struct SLLNode* demo(){
     return myNode;
 }
 
-void demo2(){
+void sllDemo(){
 
+    //demo routine
     int* loadingInt;
     SLLNode* start = newNodeWithSize(sizeof(int));
     SLLNode* second = newNodeWithSize(sizeof(int));
@@ -96,10 +97,16 @@ void demo2(){
 
     for (int i = 0; current != NULL; i++) {
         loadingInt = current->value;
-        printf("the value of sllnode at index %d is: %d\n",i,*loadingInt);
+        printf("%d:%d",i,*loadingInt);
         current = current->next;
+        if (current){
+            printf("->");
+        } else {
+            printf("\n");
+        }
     }
 
+    printf("Will free linked list:\n");
     freeSinglyLinkedList(start);
 
     printf("...done\n");

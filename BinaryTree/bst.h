@@ -17,9 +17,9 @@ typedef struct BinaryTreeNode{
 
 struct BinaryTreeNode* initWithSize(size_t size);
 
-int comparison(struct BinaryTreeNode* compareNode,struct BinaryTreeNode* currentNode);
+int compareTreeNodes(struct BinaryTreeNode* compareNode, struct BinaryTreeNode* currentNode);
 
-void addValueNode(struct BinaryTreeNode *treeRoot,void* value);
+void addValueForNode(struct BinaryTreeNode *treeRoot, void* value);
 
 bool nodeIsLeaf(struct BinaryTreeNode *node);
 

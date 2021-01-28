@@ -12,7 +12,7 @@ int main() {
     printf("value from heap is: %d\n",*valueFromHeap);
     free(newnode);
 
-    //demo2();
+    sllDemo();
     printf("\ntrees:\n");
     treeDemo();
 
