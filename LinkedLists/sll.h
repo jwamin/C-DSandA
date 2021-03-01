@@ -23,6 +23,6 @@ struct SLLNode* newNodeWithSize(size_t size);
 
 struct SLLNode* demo();
 
-void demo2(void);
+void sllDemo(void);
 
 #endif //DSANDA_SLL_H
