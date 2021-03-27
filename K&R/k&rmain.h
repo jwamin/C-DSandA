@@ -7,4 +7,8 @@
 
 void krMain(int argc, char** argv);
 
+void println(const char *format, ...);
+
+void funWithPointers();
+
 #endif //DSANDA_K_RMAIN_H
