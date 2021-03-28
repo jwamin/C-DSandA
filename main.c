@@ -41,26 +41,49 @@ int main(int argc, char* argv[]) {
     arrays();
 
     //krMain(argc,argv);
-    printf("string reverse:\n");
-    const char* cstr = "revetahw";
-    printf("original cstr: %s\n");
 
-    char* mystr;
-    strcpy(mystr,cstr);
-    printf("copy of cstr string mystr: %s\n",mystr);
-    reverseEntireString(mystr);
-    printf("mystr string reversed: %s\n\n",mystr);
+    //###########################3
+    //String reverse in range
+
+
+    const char* cstr = "revetahw";
+    const char* toReversed = "desrever";
+    char* mystr = malloc(sizeof(int)*strlen(toReversed));
 
     char str2[] = "Because this is my united states of ";
-    printf("original String: %s\n",str2);
-
     char* outstr;
+
+    //Whole String reverse
+    printf("Whole string reverse:\n");
+
+    printf("original cstr: %s\n",toReversed);
+
+    strcpy(mystr,toReversed);
+
+    printf("copy of cstr string mystr: %s\n",toReversed);
+
+    reverseEntireString(mystr);
+
+    printf("mystr string reversed: %s\n\n",mystr);
+
+    printf("mystr pointer: %p, cstr pointer: %p\n",mystr,toReversed);
+
+    //free malloc'd string
+    free(mystr);
+
+
+    //##############################
+    // Testing reversing in range
+
+    printf("original String: \"%s\"\n",str2);
+
     outstr = strcat(str2,cstr);
+    size_t endIndex = strlen(outstr) - 1;
+    reverseCharacters(outstr,36,endIndex);
 
-    reverseCharacters(outstr,36,strlen(outstr)-1);
+    printf("outstr concat with last word reversed at index 36-%lu \"%s\"\n",endIndex,outstr);
 
-    printf("out string concat with last word reversed at index %s\n",outstr);
-
+    //Other bits
     funWithPointers();
 
     return 0;
@@ -68,14 +91,12 @@ int main(int argc, char* argv[]) {
 
 void reverseCharacters(char *str, size_t lower, size_t upper) {
 
-    char tempLchar;
-    char tempRchar;
+    char temp;
 
     while (lower < upper) {
-        tempLchar = str[lower];
-        tempRchar = str[upper];
-        str[lower] = tempRchar;
-        str[upper] = tempLchar;
+        temp = str[lower];
+        str[lower] = str[upper];
+        str[upper] = temp;
         lower++;
         upper--;
     }
