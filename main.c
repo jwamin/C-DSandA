@@ -5,6 +5,7 @@
 #include "Arrays/arrays.h"
 #include "K&R/k&rmain.h"
 #include <string.h>
+#include "Arrays/binSearch.h"
 
 void reverseEntireString(char* str);
 void reverseCharacters(char *str, size_t leftIndex, size_t rightIndex);
@@ -85,6 +86,18 @@ int main(int argc, char* argv[]) {
 
     //Other bits
     funWithPointers();
+
+    //Binary Search
+
+    int length = 40;
+    int* array = (int*) malloc (sizeof(int) * length);
+    for (int i = 0; i < length; ++i) {
+        array[i] = i+1;
+    }
+
+    int result = binSearch(1,array,length);
+
+    printf("binSearchResult: %d\n",result);
 
     return 0;
 }
