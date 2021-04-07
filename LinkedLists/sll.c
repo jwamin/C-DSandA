@@ -23,6 +23,21 @@ void freeSinglyLinkedList(struct SLLNode* node){
     free(node);
 }
 
+void printSLL(struct SLLNode *start){
+    int* loadingInt;
+    struct SLLNode *current = start;
+    for (int i = 0; current != NULL; i++) {
+        loadingInt = current->value;
+        printf("%d:%d",i,*loadingInt);
+        current = current->next;
+        if (current){
+            printf("->");
+        } else {
+            printf("\n");
+        }
+    }
+}
+
 struct SLLNode* demo(){
 
     ///Declaration of variables
@@ -93,22 +108,36 @@ void sllDemo(){
     loadingInt = end->value;
     *loadingInt = 13;
 
-    SLLNode* current = start;
+    printSLL(start);
 
-    for (int i = 0; current != NULL; i++) {
-        loadingInt = current->value;
-        printf("%d:%d",i,*loadingInt);
-        current = current->next;
-        if (current){
-            printf("->");
-        } else {
-            printf("\n");
-        }
-    }
+    start = reverseListInPlace(start);
+
+    printSLL(start);
 
     printf("Will free linked list:\n");
     freeSinglyLinkedList(start);
 
     printf("...done\n");
+
+}
+
+struct SLLNode* reverseListInPlace(struct SLLNode* start) {
+    struct SLLNode* next = NULL;
+    struct SLLNode* previous = NULL;
+    struct SLLNode* current = start;
+
+    while (current != NULL){
+
+        next = current->next;
+        current->next = previous;
+        previous = current;
+        current = next;
+        if (current != NULL)
+        {
+            printf("current now: %d, pointing at %d\n", *(int *) current->value, *(int *) previous->value);
+        }
+    }
+    printf("returning new start node %d\n",*(int*)previous->value);
+    return previous;
 
 }

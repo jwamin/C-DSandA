@@ -25,4 +25,6 @@ struct SLLNode* demo();
 
 void sllDemo(void);
 
+struct SLLNode* reverseListInPlace(struct SLLNode* start);
+
 #endif //DSANDA_SLL_H
