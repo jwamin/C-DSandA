@@ -110,7 +110,7 @@ void sllDemo(){
 
     printSLL(start);
 
-    start = reverseListInPlace(start);
+    reverseListInPlace(&start);
 
     printSLL(start);
 
@@ -121,10 +121,10 @@ void sllDemo(){
 
 }
 
-struct SLLNode* reverseListInPlace(struct SLLNode* start) {
+struct SLLNode* reverseListInPlace(struct SLLNode** start) {
     struct SLLNode* next = NULL;
     struct SLLNode* previous = NULL;
-    struct SLLNode* current = start;
+    struct SLLNode* current = *start;
 
     while (current != NULL){
 
@@ -137,7 +137,11 @@ struct SLLNode* reverseListInPlace(struct SLLNode* start) {
             printf("current now: %d, pointing at %d\n", *(int *) current->value, *(int *) previous->value);
         }
     }
-    printf("returning new start node %d\n",*(int*)previous->value);
-    return previous;
+
+    *start = previous;
+    current = *start;
+    printf("returning new start node %d\n",*(int*)current->value);
+
+    return *start;
 
 }
