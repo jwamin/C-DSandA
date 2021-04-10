@@ -6,6 +6,7 @@
 #include "K&R/k&rmain.h"
 #include <string.h>
 #include "Arrays/binSearch.h"
+#include <assert.h>
 
 void reverseEntireString(char* str);
 void reverseCharacters(char *str, size_t leftIndex, size_t rightIndex);
@@ -98,6 +99,17 @@ int main(int argc, char* argv[]) {
     int result = binSearch(1,array,length);
 
     printf("binSearchResult: %d\n",result);
+
+    char myTest[] = {'g','h','a','b','c','d','e','f'}; // 2
+    char myTest2[] = {'e','f','g','h','i','j','k','a','b','c','d'}; //7
+    char myTest3[] = {'c','d','e','f','g','h','i','j','k','l','m','n','a','b'}; //12
+
+    printf("rotation point test1: should be 2, answer: %d\n",findRotationPoint(myTest,8));
+    assert(findRotationPoint(myTest,8) == 2);
+    printf("rotation point test2: should be 7, answer: %d\n",findRotationPoint(myTest2,11));
+    assert(findRotationPoint(myTest2,11) == 7);
+    printf("rotation point test3: should be 12, answer: %d\n",findRotationPoint(myTest3,14));
+    assert(findRotationPoint(myTest3,14) == 12);
 
     return 0;
 }
