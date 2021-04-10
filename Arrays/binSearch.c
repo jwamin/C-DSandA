@@ -41,13 +41,15 @@ while (lower <= upper) {
 
 }
 
+return -1;
+
 }
 
 int binSearch(int searchItem, const int* array,int length){
 
     int lower = 0;
     int upper = length - 1;
-    int mid = -1;
+    int mid;
     int current;
 
     while (lower <= upper){
