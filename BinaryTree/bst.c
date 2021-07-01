@@ -55,6 +55,38 @@ bool nodeIsLeaf(struct BinaryTreeNode *node){
     return isLeaf;
 }
 
+//public func isBST(minValue: T, maxValue: T) -> Bool {
+//if value < minValue || value > maxValue { return false }
+//let leftBST = left?.isBST(minValue: minValue, maxValue: value) ?? true
+//let rightBST = right?.isBST(minValue: value, maxValue: maxValue) ?? true
+//return leftBST && rightBST
+//}
+
+//recursive isBST
+uint isBST(const BinaryTreeNode* root) {
+
+    if (root == NULL)
+        return 1;
+
+    if (root->left != NULL && *(int*)root->left->value > *(int*)root->value){
+        printf("right faulure left: %d value: %d\n",*(int*)root->left->value,*(int*)root->value);
+        return 0;
+    }
+
+    if (root->right != NULL && *(int*)root->right->value < *(int*)root->value){
+        printf("right faulure right: %d value: %d\n",*(int*)root->right->value,*(int*)root->value);
+        return 0;
+    }
+
+    if (!isBST(root->left) || !isBST(root->right)){
+        printf("recursive failure\n");
+        return 0;
+    }
+
+    return 1;
+
+}
+
 char* boolToString(bool boolean){
     return boolean ? "true" : "false";
 }
@@ -78,7 +110,7 @@ void treeDemo(){
     BinaryTreeNode *rightleft = initWithSize(sizeof(int));
     loaderInt = rightleft->value;
     *loaderInt = 70;
-    right->right = rightleft;
+    right->left = rightleft;
 
     BinaryTreeNode *rightleftleft = initWithSize(sizeof(int));
     loaderInt = rightleftleft->value;
@@ -86,6 +118,8 @@ void treeDemo(){
     rightleft->left = rightleftleft;
 
     traverseInOrder(node, NULL);
+
+    printf("isBST: %d\n", isBST(node));
 }
 
 //not current implemented

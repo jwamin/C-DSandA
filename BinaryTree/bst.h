@@ -21,6 +21,10 @@ int compareTreeNodes(struct BinaryTreeNode* compareNode, struct BinaryTreeNode* 
 
 void addValueForNode(struct BinaryTreeNode *treeRoot, void* value);
 
+uint isBST(const struct BinaryTreeNode* root);
+
+struct BinaryTreeNode* largestValueInTree(const struct BinaryTreeNode* root);
+
 bool nodeIsLeaf(struct BinaryTreeNode *node);
 
 void treeDemo();
