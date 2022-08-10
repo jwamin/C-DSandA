@@ -3,4 +3,4 @@ project(DSandA C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(DSandA main.c LinkedLists/sll.h LinkedLists/sll.c BinaryTree/bst.h BinaryTree/bst.c)
+add_executable(DSandA main.c DataStructures/LinkedLists/sll.h DataStructures/LinkedLists/sll.c DataStructures/BinaryTree/bst.h DataStructures/BinaryTree/bst.c fPointer/fpointer.c fPointer/fpointer.h)

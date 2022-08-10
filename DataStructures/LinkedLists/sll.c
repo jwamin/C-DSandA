@@ -68,6 +68,8 @@ void sllDemo(){
 
     //demo routine
     int* loadingInt;
+    SLLNode* current;
+
     SLLNode* start = newNodeWithSize(sizeof(int));
     SLLNode* second = newNodeWithSize(sizeof(int));
     SLLNode* third = newNodeWithSize(sizeof(int));
@@ -93,7 +95,7 @@ void sllDemo(){
     loadingInt = end->value;
     *loadingInt = 13;
 
-    SLLNode* current = start;
+    current = start;
 
     for (int i = 0; current != NULL; i++) {
         loadingInt = current->value;
