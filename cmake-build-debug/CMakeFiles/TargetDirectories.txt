@@ -1,3 +1,0 @@
-/Users/jwamin/CLionProjects/DSandA/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/jwamin/CLionProjects/DSandA/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/jwamin/CLionProjects/DSandA/cmake-build-debug/CMakeFiles/DSandA.dir

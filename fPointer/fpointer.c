@@ -5,6 +5,12 @@
 #include "fpointer.h"
 #include <stdio.h>
 
+//Create a function that accepts a) a collection, b) a length, c) a pointer to sorting function
+// typedef of sorting function
+//
+
+
+
 int hello(void* fPointer){
     FPointer *this = (FPointer*)fPointer;
 
