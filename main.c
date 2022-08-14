@@ -2,6 +2,7 @@
 #include "DataStructures/LinkedLists/sll.h"
 #include "DataStructures/BinaryTree/bst.h"
 #include "fPointer/fpointer.h"
+#include "cake-thief/cake-thief.h"
 
 int main() {
 
@@ -20,6 +21,7 @@ int main() {
 //    treeDemo();
 
     fPointerRoutine();
+    cakeThiefDriver();
 
     return 0;
 }
