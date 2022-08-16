@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include "DataStructures/LinkedLists/sll.h"
 #include "DataStructures/BinaryTree/bst.h"
-#include "function-pointers/function-pointers.h"
-#include "cake-thief/cake-thief.h"
+#include "fPointer/fpointer.h"
 
 int main() {
 
@@ -21,7 +20,6 @@ int main() {
 //    treeDemo();
 
     fPointerRoutine();
-    cakeThiefDriver();
 
     return 0;
 }
