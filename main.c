@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "DataStructures/LinkedLists/sll.h"
 #include "DataStructures/BinaryTree/bst.h"
-#include "fPointer/fpointer.h"
+#include "function-pointers/function-pointers.h"
 #include "cake-thief/cake-thief.h"
 
 int main() {
