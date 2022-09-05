@@ -23,6 +23,8 @@ struct SLLNode* newNodeWithSize(size_t size);
 
 struct SLLNode* demo();
 
+int indexFromEnd(const SLLNode *start, SLLNode **out, unsigned char indexFromEnd);
+
 void sllDemo(void);
 
 #endif //DSANDA_SLL_H

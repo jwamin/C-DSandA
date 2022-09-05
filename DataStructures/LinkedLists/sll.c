@@ -108,9 +108,48 @@ void sllDemo(){
         }
     }
 
+    SLLNode *out;
+    int fail = indexFromEnd(start,&out,3);
+    if (!fail) {
+        loadingInt = out->value;
+        printf("success: %d, %d from end is %d\n", fail, 3, *(int *) out->value);
+    }
+
+    fail = indexFromEnd(start->next->next,&out,3);
+    if (!fail) {
+        loadingInt = out->value;
+        printf("success: %d, %d from end is %d\n", fail, 3, *(int *) out->value);
+    } else {
+        printf("fail\n");
+    }
+
+    freeSinglyLinkedList(out);
     printf("Will free linked list:\n");
     freeSinglyLinkedList(start);
 
     printf("...done\n");
+
+}
+
+int indexFromEnd(const SLLNode *start, SLLNode **out, unsigned char indexFromEnd) {
+    unsigned char count = 0, isLongEnough = 0;
+    SLLNode *current = start;
+    SLLNode *current2 = start;
+
+    while(current != NULL){
+        if (count>=indexFromEnd + 1){
+            isLongEnough = 1;
+            current2 = current2->next;
+        }
+        count++;
+        current = current->next;
+    }
+
+    if (isLongEnough) {
+        *out = current2;
+        return 0;
+    } else {
+        return 1;
+    }
 
 }

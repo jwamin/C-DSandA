@@ -16,16 +16,16 @@ int main() {
 //    printf("value from heap is: %d\n",*valueFromHeap);
 //    free(newnode);
 //
-//    sllDemo();
+    sllDemo();
 //    printf("\ntrees:\n");
 //    treeDemo();
 
-    float lower = min(0.2f,2);
-    float upper = max(0.2f,2);
-    printf("%.2f %.2f\n",lower, upper);
-    printf("%d %d\n",(int)lower, (int)upper);
-    fPointerRoutine();
-    cakeThiefDriver();
+//    float lower = min(0.2f,2);
+//    float upper = max(0.2f,2);
+//    printf("%.2f %.2f\n",lower, upper);
+//    printf("%d %d\n",(int)lower, (int)upper);
+//    fPointerRoutine();
+//    cakeThiefDriver();
 
     return 0;
 }
