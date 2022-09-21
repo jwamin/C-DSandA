@@ -4,6 +4,7 @@
 #include "function-pointers/function-pointers.h"
 #include "cake-thief/cake-thief.h"
 #include <helpers.h>
+#include "cake-array-merge/array-merge.h"
 int main() {
 
     printf("Hello, World!\n");
@@ -16,7 +17,7 @@ int main() {
 //    printf("value from heap is: %d\n",*valueFromHeap);
 //    free(newnode);
 //
-    sllDemo();
+    //sllDemo();
 //    printf("\ntrees:\n");
 //    treeDemo();
 
@@ -26,6 +27,6 @@ int main() {
 //    printf("%d %d\n",(int)lower, (int)upper);
 //    fPointerRoutine();
 //    cakeThiefDriver();
-
+test();
     return 0;
 }
